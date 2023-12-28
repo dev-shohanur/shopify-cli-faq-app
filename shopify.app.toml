@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "faq-cli-app"
+client_id = "a1092f6e8f83f6d2138df89185658e7e"
+application_url = "https://bases-attending-enabled-brush.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://bases-attending-enabled-brush.trycloudflare.com/auth/callback",
+  "https://bases-attending-enabled-brush.trycloudflare.com/auth/shopify/callback",
+  "https://bases-attending-enabled-brush.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "dev-shohan.myshopify.com"

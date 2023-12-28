@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "faq-cli-app"
+client_id = "aff7cbe1c3308ad4b7b08cec9f81b901"
+application_url = "https://letting-tablet-creator-hairy.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://letting-tablet-creator-hairy.trycloudflare.com/auth/callback",
+  "https://letting-tablet-creator-hairy.trycloudflare.com/auth/shopify/callback",
+  "https://letting-tablet-creator-hairy.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "dev-shohan.myshopify.com"
